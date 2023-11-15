@@ -1,85 +1,101 @@
+/* Général */
+
 html {
-    font-family: 'verdana';
-    font-size: 14px;
-    color: #2C4726;
-}
-body {
-    background-image: url("../img/fond.png");
-    max-width: 750px;
-	margin-left:auto;
-	margin-right:auto;
-    line-height: 1.5;
-}
-.main {
-    background-color:white;
-}
-article {
-    margin-right: 1em;
-    margin-left: 2em;
-}
-.header {
-    margin-top:0px;
-    background-color: #b8cb21;
-    
-}
-.clear {
-    clear:both;
-}
-.who {
-    float:left;
-    margin-right: 1em;
-}
-.what {
-    float:left;
-    margin-right: 1em;
-}
-.logo {
-    float:left;
-}
-h1, h2, .nav {
-    font-family: 'oswald';
-    text-transform: uppercase;
+	font-size: 62.5%;	
 }
 
+body {
+	font-family: verdana, sans-serif;
+	margin: 0;
+	color: #2C4726;
+	background-image: url(../img/fond.png);
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 750px;
+	margin: 0 auto;
+    background-color: #fff;
+	font-size: 1.6rem;
+}
+
+/* header */
+header {
+	background-color: #B8CB21;
+	padding: 25px;
+	overflow: hidden;
+}
+
+header img {
+    float: left;
+}
+
+nav {
+	float: right;
+	padding: 50px 0;
+}
+
+nav a {
+	color: #2C4726;
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 15px;
+	font-family: "Oswald", sans-serif;
+	font-size: 2.1rem;
+}
+
+/* articles */
+
 h1 {
-    font-size: 2.14rem;
-    text-align: center;
-    margin-top: 0px;
+	font-family: "Oswald", sans-serif;
+	font-weight: normal;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0;
 }
+
 h2 {
-    font-size: 1.5rem;
+	font-family: "Oswald", sans-serif;
+	color: #2C4726;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 0;#
 }
-.footer {
-    font-size: 0.86rem;
+
+h2::before {
+    font-family: 'Font Awesome 5 Brands';
+    content:"\f18c";
+    margin-right: 10px;
+    color: #B8CB21;
+}
+
+article {
+    overflow: hidden;
+	padding: 25px;
+}
+
+article img {
+	float: left;
+	width: 350px;
+	margin-right: 10px;
+}
+
+.more {
+	float: right;
+	text-decoration: none;
+	color: #2C4726;
+	background-color: #B8CB21;
+	padding: 10px;
+}
+
+/* footer */
+
+footer {
     text-align: center;
+    padding: 25px;
 }
-.read_more {
-    background-color: #b8cb21;
-    float: right;
-}
-.footer a {
-    text-decoration: none;
-}
-.fa-brands {
-    color:#b8cb21;
-}
-/****************** NAV ************************/
-.nav {
-    font-size:1.43rem;
-    text-transform: uppercase;
-    float:right;
-    margin-top: 1em;
-}
-.nav ul  {
-    list-style-type: none;
-}
-.menu {
-    display: inline-block;
-    margin-right:3em;
-}
-.menu a {
-    text-decoration-style: normal;
-}
-.menu a:visited {
-    color: black;
+
+footer img {
+    width: 50px;
 }
